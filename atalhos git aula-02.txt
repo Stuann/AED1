@@ -1,0 +1,48 @@
+Comandos Básicos Linux
+----------------------
+mkdir projetointegrador --cria a pasta
+cd projetointegrador    --posiciona na pasta
+cd ..                   --volta uma pasta
+clear                   --limpa a tela
+touch nomearquivo       --cria um arquivo no SO
+ls                      --lista os arquivos
+cat nomearquivo         --exibe o conteúdo do arquivo
+
+Comandos Básicos GIT
+--------------------
+git config --global user.name "Ricardo Leme"
+git config --global user.email "ricardo@uol.com"
+
+git init              --Inicializa o repositório
+git status            --Exibe o status do repo
+git add nomearquivo   --Adiciona o arquivo no git
+git add .             --Adiciona todos os arquivos
+git commit -m "msg"   --Efetua o commit
+git diff              --Mostra as diferenças
+git diff --name-only  --Mostra o nome do arq dif.
+git log               --Mostra o log de commit´s
+git log --pretty=oneline --Mostra o log em 1 linha
+
+Configurações SSH (Secure Shell)
+1. Gerando a chave com a curva eliptica Curve 25519
+ssh-keygen -t ed25519 -C "email@dominio.com.br"
+
+2.Mostra o conteúdo da chave gerada
+cat ~/.ssh/id_ed25519.pub
+
+3.Copiar a chave no Github
+
+4.Testar a conexão
+ssh -T git@github.com
+
+
+
+
+
+
+
+
+
+
+
+ 
